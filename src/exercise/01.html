@@ -17,3 +17,19 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+
+<html>
+
+<body id="root">
+    <script type="module">
+        const root_element = document.createElement('div')
+        const doc_element = document.createElement('div')
+        root_element.className = 'root-div'
+        doc_element.textContent = 'Hello World!'
+        const root_body = document.getElementById('root')
+        root_element.appendChild(doc_element)
+        root_body.appendChild(root_element)
+    </script>
+</body>
+
+</html>
